@@ -2987,7 +2987,7 @@ const ListTileSubTitle = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__util
 
   computed: {
     calculatedMinWidth() {
-      return this.minWidth || this.dimensions.activator.width + this.nudgeWidth + (this.auto ? 16 : 0);
+      return this.minWidth !== null ? this.minWidth : this.dimensions.activator.width + this.nudgeWidth + (this.auto ? 16 : 0);
     },
     styles() {
       return {
